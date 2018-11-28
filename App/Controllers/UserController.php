@@ -13,7 +13,7 @@ class UserController extends BaseController
 {
     public function showAction($id){
 
-        $user = 'Andreea';
+        $user = 'Andreea'.$id;
 
         return $this->view("user/show.html",["name" => $user]);
     }
