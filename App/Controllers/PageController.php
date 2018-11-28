@@ -7,7 +7,9 @@
  */
 
 namespace App\Controllers;
-class PageController
+use Framework\BaseController;
+
+class PageController extends BaseController
 {
     public function aboutUsAction(){
 

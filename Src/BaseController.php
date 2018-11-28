@@ -11,7 +11,18 @@ namespace Framework;
 
 class BaseController
 {
-    public function view(string $viewFile,array $params){
+    private $twig;
 
+    public function __construct()
+    {
+        $loader = new \Twig_Loader_Filesystem(__DIR__.'/../App/Views');
+        $this->twig = new \Twig_Environment($loader,array(
+            'cache' => __DIR__.'/../Storage/Cache/Views',
+        ));
+    }
+
+    public function view(string $viewFile,array $params = [])
+    {
+        echo $this->twig->render($viewFile,$params);
     }
 }

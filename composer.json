@@ -4,5 +4,8 @@
       "Framework\\": "Src/",
       "App\\": "App/"
     }
+  },
+  "require": {
+    "twig/twig": "^2.0"
   }
 }

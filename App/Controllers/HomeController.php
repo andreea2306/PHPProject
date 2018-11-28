@@ -7,7 +7,9 @@
  */
 
 namespace App\Controllers;
-class HomeController
+use Framework\BaseController;
+
+class HomeController extends BaseController
 {
     public function index(){
         echo "Hello user";

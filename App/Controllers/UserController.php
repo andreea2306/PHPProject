@@ -7,11 +7,14 @@
  */
 
 namespace App\Controllers;
-class UserController
+use Framework\BaseController;
+
+class UserController extends BaseController
 {
     public function showAction($id){
 
-        echo "show action";
+        $user = 'Andreea';
 
+        return $this->view("user/show.html",["name" => $user]);
     }
 }

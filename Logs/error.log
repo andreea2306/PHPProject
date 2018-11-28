@@ -715,3 +715,23 @@ Stack trace:
 #1 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/page/about-us', '')
 #2 {main}
   thrown in C:\xampp\htdocs\Project\Src\Router.php on line 37
+[28-Nov-2018 18:48:24 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: The "C:\xampp\htdocs\Project\Src../App/Views" directory does not exist ("C:\xampp\htdocs\Project\Src../App/Views"). in C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:101
+Stack trace:
+#0 C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(82): Twig_Loader_Filesystem->addPath('C:\\xampp\\htdocs...', '__main__')
+#1 C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(40): Twig_Loader_Filesystem->setPaths(Array)
+#2 C:\xampp\htdocs\Project\Src\BaseController.php(18): Twig_Loader_Filesystem->__construct('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Project\Src\Router.php(37): Framework\BaseController->__construct()
+#4 C:\xampp\htdocs\Project\Src\Router.php(17): Framework\Router->getControllerName(Array, '/page/about-us')
+#5 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/page/about-us', '')
+#6 {main}
+  thrown in C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 101
+[28-Nov-2018 18:50:06 Europe/Berlin] PHP Fatal error:  Uncaught Twig_Error_Loader: The "C:\xampp\htdocs\Project\Src..\App\Views" directory does not exist ("C:\xampp\htdocs\Project\Src..\App\Views"). in C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php:101
+Stack trace:
+#0 C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(82): Twig_Loader_Filesystem->addPath('C:\\xampp\\htdocs...', '__main__')
+#1 C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php(40): Twig_Loader_Filesystem->setPaths(Array)
+#2 C:\xampp\htdocs\Project\Src\BaseController.php(18): Twig_Loader_Filesystem->__construct('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Project\Src\Router.php(37): Framework\BaseController->__construct()
+#4 C:\xampp\htdocs\Project\Src\Router.php(17): Framework\Router->getControllerName(Array, '/page/about-us')
+#5 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/page/about-us', '')
+#6 {main}
+  thrown in C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 101
