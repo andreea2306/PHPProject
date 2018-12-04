@@ -735,3 +735,522 @@ Stack trace:
 #5 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/page/about-us', '')
 #6 {main}
   thrown in C:\xampp\htdocs\Project\vendor\twig\twig\lib\Twig\Loader\Filesystem.php on line 101
+[04-Dec-2018 09:45:50 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:45:50 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:45:50 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:45:51 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:45:51 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:45:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP   2. Framework\Router->checkUrl() C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction() C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP   4. App\Models\User->get() C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:46:02 Europe/Berlin] PHP   5. App\Models\User->newDbCon() C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP   2. Framework\Router->checkUrl() C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction() C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP   4. App\Models\User->get() C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:46:10 Europe/Berlin] PHP   5. App\Models\User->newDbCon() C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP   2. Framework\Router->checkUrl() C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction() C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP   4. App\Models\User->get() C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:46:16 Europe/Berlin] PHP   5. App\Models\User->newDbCon() C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:46:32 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:46:32 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP   2. Framework\Router->checkUrl() C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction() C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP   4. App\Models\User->get() C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:46:33 Europe/Berlin] PHP   5. App\Models\User->newDbCon() C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:47:05 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:47:05 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:47:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:47:24 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:47:59 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:47:59 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:47:59 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:48:07 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:48:30 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:48:30 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:48:30 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP Catchable fatal error:  Object of class App\Config could not be converted to string in C:\xampp\htdocs\Project\Src\Model.php on line 21
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:48:44 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:49:22 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:49:22 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:49:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:48 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:50:48 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:48 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 22
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 22
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 24
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 25
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:50:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: invalid data source name in C:\xampp\htdocs\Project\Src\Model.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Project\Src\Model.php(63): Framework\Model->newDbCon()
+#1 C:\xampp\htdocs\Project\App\Controllers\UserController.php(18): Framework\Model->get('3')
+#2 C:\xampp\htdocs\Project\Src\Router.php(23): App\Controllers\UserController->showAction('3')
+#3 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/user/3', '')
+#4 {main}
+  thrown in C:\xampp\htdocs\Project\Src\Model.php on line 40
+[04-Dec-2018 09:50:58 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:50:58 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:50:58 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 22
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 22
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:51:10 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 23
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:51:21 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:51:38 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:51:38 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:51:38 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 22
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 22
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:51:47 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 23
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:52:36 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 24
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:52:41 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\Project\Src\Model.php on line 25
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:52:43 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:53:51 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:53:51 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:53:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:07 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:08 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'users' in C:\xampp\htdocs\Project\Src\Model.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Project\Src\Model.php(63): Framework\Model->newDbCon()
+#1 C:\xampp\htdocs\Project\App\Controllers\UserController.php(18): Framework\Model->get('3')
+#2 C:\xampp\htdocs\Project\Src\Router.php(23): App\Controllers\UserController->showAction('3')
+#3 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/user/3', '')
+#4 {main}
+  thrown in C:\xampp\htdocs\Project\Src\Model.php on line 40
+[04-Dec-2018 09:54:08 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:54:08 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:08 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'users' in C:\xampp\htdocs\Project\Src\Model.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Project\Src\Model.php(63): Framework\Model->newDbCon()
+#1 C:\xampp\htdocs\Project\App\Controllers\UserController.php(18): Framework\Model->get('3')
+#2 C:\xampp\htdocs\Project\Src\Router.php(23): App\Controllers\UserController->showAction('3')
+#3 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/user/3', '')
+#4 {main}
+  thrown in C:\xampp\htdocs\Project\Src\Model.php on line 40
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'users' in C:\xampp\htdocs\Project\Src\Model.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Project\Src\Model.php(63): Framework\Model->newDbCon()
+#1 C:\xampp\htdocs\Project\App\Controllers\UserController.php(18): Framework\Model->get('3')
+#2 C:\xampp\htdocs\Project\Src\Router.php(23): App\Controllers\UserController->showAction('3')
+#3 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/user/3', '')
+#4 {main}
+  thrown in C:\xampp\htdocs\Project\Src\Model.php on line 40
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:54:54 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'users' in C:\xampp\htdocs\Project\Src\Model.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Project\Src\Model.php(63): Framework\Model->newDbCon()
+#1 C:\xampp\htdocs\Project\App\Controllers\UserController.php(18): Framework\Model->get('3')
+#2 C:\xampp\htdocs\Project\Src\Router.php(23): App\Controllers\UserController->showAction('3')
+#3 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/user/3', '')
+#4 {main}
+  thrown in C:\xampp\htdocs\Project\Src\Model.php on line 40
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Src\Model.php on line 38
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   4. App\Models\User->get($id = *uninitialized*) C:\xampp\htdocs\Project\App\Controllers\UserController.php:18
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP   5. App\Models\User->newDbCon($resultAsArray = *uninitialized*) C:\xampp\htdocs\Project\Src\Model.php:63
+[04-Dec-2018 09:55:11 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'users' in C:\xampp\htdocs\Project\Src\Model.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Project\Src\Model.php(63): Framework\Model->newDbCon()
+#1 C:\xampp\htdocs\Project\App\Controllers\UserController.php(18): Framework\Model->get('3')
+#2 C:\xampp\htdocs\Project\Src\Router.php(23): App\Controllers\UserController->showAction('3')
+#3 C:\xampp\htdocs\Project\Public\index.php(21): Framework\Router->checkUrl(Array, '/user/3', '')
+#4 {main}
+  thrown in C:\xampp\htdocs\Project\Src\Model.php on line 40
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP Notice:  Trying to get property 'name' of non-object in C:\xampp\htdocs\Project\App\Controllers\UserController.php on line 20
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:56:29 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:56:30 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:56:30 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:56:30 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:56:52 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:56:52 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:56:52 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:56:52 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')', expecting ']' in C:\xampp\htdocs\Project\App\Controllers\UserController.php on line 20
+[04-Dec-2018 09:57:37 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:57:37 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:57:37 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP Notice:  Trying to get property 'email' of non-object in C:\xampp\htdocs\Project\App\Controllers\UserController.php on line 20
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 09:59:49 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:00:12 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:00:12 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:00:12 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:00:15 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:00:15 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:00:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:00:34 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:00:34 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:00:34 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:03:12 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:03:12 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:03:12 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in C:\xampp\htdocs\Project\App\Controllers\UserController.php on line 20
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:03:24 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:03:51 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:03:51 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:03:51 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:04:05 Europe/Berlin] PHP Notice:  Undefined property: stdClass::$email in C:\xampp\htdocs\Project\App\Controllers\UserController.php on line 20
+[04-Dec-2018 10:04:05 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:04:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:04:05 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 10:04:05 Europe/Berlin] PHP   3. App\Controllers\UserController->showAction($id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:23
+[04-Dec-2018 10:04:08 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:04:08 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:04:08 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:04:11 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:04:11 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:04:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:04:19 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:04:19 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:04:19 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:25:39 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:25:39 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:25:39 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:25:40 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:25:40 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:25:40 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:25:59 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:25:59 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:25:59 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:26:00 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:26:00 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:26:00 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:26:52 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:26:52 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:26:52 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:26:52 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:26:52 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:26:52 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:27:03 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:27:03 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:27:03 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:27:04 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:27:04 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:27:04 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:27:15 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:27:15 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:27:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:27:15 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:27:15 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:27:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:27:16 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:27:16 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:27:16 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:27:17 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:27:17 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:27:17 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:22 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:23 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:28:31 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:28:31 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:28:31 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:30:52 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:30:52 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:30:52 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:30:53 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:30:53 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:30:53 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:30:55 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:30:55 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:30:55 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:32:19 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:32:19 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:32:19 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:32:21 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:32:21 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:32:21 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP Fatal error:  Interface 'Guard' not found in C:\xampp\htdocs\Project\App\Guards\Authenticated.php on line 10
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   3. Framework\Router->getControllerName($routes = *uninitialized*, $url = *uninitialized*, $id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:22
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   4. Framework\Router->checkGuard($routes = *uninitialized*, $route = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:38
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   5. spl_autoload_call(*uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   6. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   7. Composer\Autoload\includeFile($file = *uninitialized*) C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:322
+[04-Dec-2018 10:32:28 Europe/Berlin] PHP   8. include() C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:444
+[04-Dec-2018 10:33:05 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:33:05 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:33:05 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP Fatal error:  Interface 'Guard' not found in C:\xampp\htdocs\Project\App\Guards\Authenticated.php on line 10
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   3. Framework\Router->getControllerName($routes = *uninitialized*, $url = *uninitialized*, $id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:22
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   4. Framework\Router->checkGuard($routes = *uninitialized*, $route = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:38
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   5. spl_autoload_call(*uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   6. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   7. Composer\Autoload\includeFile($file = *uninitialized*) C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:322
+[04-Dec-2018 10:33:28 Europe/Berlin] PHP   8. include() C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:444
+[04-Dec-2018 10:34:10 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:34:10 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:34:10 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP Fatal error:  Interface 'Guard' not found in C:\xampp\htdocs\Project\App\Guards\Authenticated.php on line 10
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   3. Framework\Router->getControllerName($routes = *uninitialized*, $url = *uninitialized*, $id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:22
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   4. Framework\Router->checkGuard($routes = *uninitialized*, $route = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:38
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   5. spl_autoload_call(*uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   6. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   7. Composer\Autoload\includeFile($file = *uninitialized*) C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:322
+[04-Dec-2018 10:34:15 Europe/Berlin] PHP   8. include() C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:444
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP Fatal error:  Interface 'Guard' not found in C:\xampp\htdocs\Project\App\Guards\Authenticated.php on line 10
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   2. Framework\Router->checkUrl($routes = *uninitialized*, $url = *uninitialized*, $param = *uninitialized*) C:\xampp\htdocs\Project\Public\index.php:21
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   3. Framework\Router->getControllerName($routes = *uninitialized*, $url = *uninitialized*, $id = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:22
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   4. Framework\Router->checkGuard($routes = *uninitialized*, $route = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:38
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   5. spl_autoload_call(*uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   6. Composer\Autoload\ClassLoader->loadClass($class = *uninitialized*) C:\xampp\htdocs\Project\Src\Router.php:50
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   7. Composer\Autoload\includeFile($file = *uninitialized*) C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:322
+[04-Dec-2018 10:34:32 Europe/Berlin] PHP   8. include() C:\xampp\htdocs\Project\vendor\composer\ClassLoader.php:444
+[04-Dec-2018 10:35:11 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:35:11 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:35:11 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:35:15 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:35:15 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:35:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0
+[04-Dec-2018 10:35:15 Europe/Berlin] PHP Notice:  Undefined variable: config in C:\xampp\htdocs\Project\Public\index.php on line 16
+[04-Dec-2018 10:35:15 Europe/Berlin] PHP Stack trace:
+[04-Dec-2018 10:35:15 Europe/Berlin] PHP   1. {main}() C:\xampp\htdocs\Project\Public\index.php:0

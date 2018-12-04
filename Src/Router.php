@@ -34,8 +34,20 @@ class Router
         }
         $controller = $routes[$url]['controller'];
         $controller = "App\\Controllers\\".$controller;
+
+        $this->checkGuard($routes,$url);
+
         $controllerObj = new $controller();
         $action = $routes[$url]['action'];
         return array($controllerObj, $action);
+    }
+
+    private function checkGuard(array $routes,string $route): void
+    {
+        if (isset($routes[$route]['guard'])) {
+            $guard = "\\App\\Guards\\" . $routes[$route]['guard'];
+            //instantiate and execute the handle action
+            (new $guard)->handle();
+	        }
     }
 }
