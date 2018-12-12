@@ -17,6 +17,8 @@ class UserController extends BaseController
         $user = new User();
         $user = $user->get($id);
 
+        bdump($user);
+
         return $this->view("user/show.html",["name" => $user->Email]);
     }
 }

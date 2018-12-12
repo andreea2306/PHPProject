@@ -13,5 +13,9 @@ $routes = [
         'action' => 'aboutUsAction'],
     '/user/{id}' => ['controller' => 'UserController',
         'action' => 'showAction',
-        'guard' => 'Authenticated']
+        'guard' => 'Authenticated'],
+    '/auth/login' => ['controller' => 'AuthController',
+                    'action' => 'loginGET'],
+    '/auth/login-action' => ['controller' => 'AuthController',
+        'action' => 'loginPOST']
 ];

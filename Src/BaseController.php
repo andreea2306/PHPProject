@@ -19,6 +19,9 @@ class BaseController
         $this->twig = new \Twig_Environment($loader,array(
             'cache' => __DIR__.'/../Storage/Cache/Views',
         ));
+        $this->twig = new \Twig_Environment($loader);
+        session_start();
+        $this->twig->addGlobal('session.errors', $_SESSION["Errors"]);
     }
 
     public function view(string $viewFile,array $params = [])
