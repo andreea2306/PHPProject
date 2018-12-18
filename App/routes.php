@@ -17,5 +17,9 @@ $routes = [
     '/auth/login' => ['controller' => 'AuthController',
                     'action' => 'loginGET'],
     '/auth/login-action' => ['controller' => 'AuthController',
-        'action' => 'loginPOST']
+        'action' => 'loginPOST'],
+    '/auth/register' => ['controller' => 'AuthController',
+        'action' => 'registerGET'],
+    '/auth/register-action' => ['controller' => 'AuthController',
+        'action' => 'registerPOST'],
 ];

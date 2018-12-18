@@ -74,26 +74,47 @@ abstract class Model
      */
     protected function prepareDataForStmt(array $data): array
     {
+//        $columns = '';
+//        $values = [];
+//
+//        for($i=0; $i < count($data); $i++) {
+//
+//            $values[]= $data[$i];
+//            $columns .= "key($data) = ? ";
+//         //if we are not at the last element with the iteration
+//         if(count($data) < ($i + 1)) {
+//             $columns .= "AND ";
+//         }
+//       }
+//
+//        return [$columns, $values];
+
+
         $columns = '';
         $values = [];
 
-        for ($i = 0; $i < count($data); $i++) {
-
-            $values[] = $data[$i];
-            $columns += "key($data) = ? ";
+        $i=0;
+        for($i=0; $i < count($data); $i++)
+        {
+            $param = current($data);
+            $values[]= $param;
+            $columns .= key($data)." = ? ";
             //if we are not at the last element with the iteration
-            if (count($data) < ($i + 1)) {
-                $columns += "AND ";
+            if(count($data) < ($i + 1)) {
+                $columns .= "AND ";
             }
+
+            next($param);
         }
 
         return [$columns, $values];
+
     }
 
     /**
      *Find data with values
      */
-    public Function find(array $data)
+    public function find(array $data)
     {
         list($columns, $values) = $this->prepareDataForStmt($data);
         $db = $this->newDbCon();
@@ -101,11 +122,29 @@ abstract class Model
         return $stmt->execute([$values]);
     }
 
+    public function getByParams(array $data){
+        list($columns, $values) = $this->prepareDataForStmt($data);
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from $this->table where $columns");
+        $stmt->execute($values);
+        $rez = $stmt->fetch();
+        return $rez;
+    }
+
     /**
      *Insert new data in table
      */
     public function new(array $data)
     {
+        $values = array_values($data);
+        $db = $this->newDbCon();
+        $params = "?";
+        for($i=0;$i<count($data)-1;$i++){
+            $params.=",?";
+        }
+        $col = implode(",",array_keys($data));
+        $stmt=$db->prepare("INSERT INTO $this->table($col) VALUES ($params)");
+        $stmt->execute($values);
     }
 
     /**

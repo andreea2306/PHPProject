@@ -14,6 +14,8 @@ class AuthController extends BaseController
 {
 
     public function loginGET(){
+        session_start();
+        $_SESSION["Errors"] = false;
         return $this->view("user/login.html");
     }
 
@@ -28,13 +30,26 @@ class AuthController extends BaseController
 
                 echo "Login successful";
                 session_start();
-                $_SESSION["Username"] = $result["Username"];
+                $_SESSION["Username"] = $result->Username;
             }
         else{
             session_start();
             $_SESSION["Errors"] = "invalid credentials";
             header("Location: /auth/login");
         }
+    }
+
+    public function registerGET(){
+        return $this->view("user/register.html");
+    }
+
+    public function registerPOST(){
+        $email  = $_POST["email"];
+        $pass  = $_POST["password"];
+        $username  = $_POST["username"];
+
+        $userModel = new User();
+        $result = $userModel->register( $pass, $email, $username);
     }
 
 

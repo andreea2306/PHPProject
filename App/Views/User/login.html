@@ -9,10 +9,6 @@
 </head>
 <body>
 
-{% if session.Errors %}
-<div class="alert alert-danger">{{session.Errors}}</div>
-{% endif %}
-
 <div class="container">
     <h1 style="color:green"> Welcome </h1>
     <form action="/auth/login-action" method="post">
@@ -35,16 +31,17 @@
             </div>
         </div>
 
-        <!--<?php-->
-        <!--dump("dfghgfd");-->
-             <!--session_start();-->
-             <!--dump($_SESSION);-->
-            <!--echo $_SESSION["Errors"];-->
+        {% if session_errors %}
+        <div class="alert alert-danger">{{session_errors}}</div>
+        {% endif %}
 
-        <!--?>-->
         <button class="btn btn-success" type="submit"> Login in </button>
     </form>
 
+    </br>
+    <div > Sau te poti loga <a href="/auth/register"> aici </a> </div>
+
+</div>
 </div>
 
 </body>

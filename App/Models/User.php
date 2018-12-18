@@ -15,10 +15,18 @@ class User extends Model
     protected $table = "users";
 
     public function checkUser(string $email,string $pass){
-        $result = $this->find(["Email" => $email]);
+        $result = $this->getByParams(["Email" => $email]);
 
         if($result && password_verify($pass,$result->Password))
             return $result;
+
+    }
+
+    public function register(string $pass,string $email,string $username){
+        $password=password_hash($pass,PASSWORD_DEFAULT);
+
+        $data = ['Email' => $email, 'Password' => $password, 'Username' => $username];
+        $this->new($data);
     }
 
 }

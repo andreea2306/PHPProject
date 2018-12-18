@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Welcome</title>
+</head>
+<body>
+
+<div class="container">
+<h1 style="color:#ff1172"> Welcome <?= $guest ?> </h1>
+
+<form action="/auth/register-action" method="post">
+    <div class="row form-group">
+        <div class="col-sm-2">
+            <label for="username"> Name</label>
+        </div>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" name="username"/>
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-sm-2">
+            <label for="email">Email</label>
+        </div>
+        <div class="col-sm-5">
+            <input class="form-control" type="email" name="email" required placeholder="something@somthing.com"/>
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-sm-2">
+            <label for="password"> Password</label>
+        </div>
+        <div class="col-sm-5">
+            <input class="form-control" type="password" name="password" required minlength=6 />
+        </div>
+    </div>
+
+    <button class="btn btn-info" type="submit"> Sign in </button>
+</form>
+
+
+</br>
+<div > Sau te poti loga <a href="/auth/login"> aici </a> </div>
+</div>
+
+</body>
+</html>
