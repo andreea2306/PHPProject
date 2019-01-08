@@ -9,6 +9,7 @@
 $routes = [
     '/' => ['controller' => 'HomeController',
             'action' => 'index'],
+            //'guard' => 'Authenticated'],
     '/page/about-us' => ['controller' => 'PageController',
         'action' => 'aboutUsAction'],
     '/user/{id}' => ['controller' => 'UserController',
@@ -22,4 +23,6 @@ $routes = [
         'action' => 'registerGET'],
     '/auth/register-action' => ['controller' => 'AuthController',
         'action' => 'registerPOST'],
+    '/auth/logout' => ['controller' => 'AuthController',
+        'action' => 'logOutPost'],
 ];

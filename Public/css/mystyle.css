@@ -1,0 +1,51 @@
+#nav{
+    background-image: linear-gradient(to right, green , greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green,greenyellow,green);
+    font-size: 25px;
+}
+
+.whiteText, .whiteText:hover{
+    color:white;
+}
+
+.noMarinLeftRight{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.leftRightMargins{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.greenLogin{
+    color: greenyellow;
+}
+
+.greenSignin{
+    color: darkgreen;
+}
+
+.floatRight{
+    float: right;
+}
+
+.marginRight{
+    margin-right: 80px;
+}
+
+.marginRightSmall{
+    margin-right: 20px;
+}
+
+.marginTopSmall{
+    margin-top: 5px;
+}
+
+.marginLeft{
+    margin-left: 50px;
+}
+
+.fontNavTitle{
+    font-size: larger;
+
+}

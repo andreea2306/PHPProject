@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% set pageTitle="Login" %}
+{% extends "layout.html" %}
 
-    <title>Welcome</title>
-</head>
-<body>
+{% block content %}
+    {{parent()}}
 
 <div class="container">
-<h1 style="color:#ff1172"> Welcome <?= $guest ?> </h1>
+<h1 class="greenSignin"> Welcome <?= $guest ?> </h1>
 
 <form action="/auth/register-action" method="post">
     <div class="row form-group">
@@ -41,7 +35,7 @@
         </div>
     </div>
 
-    <button class="btn btn-info" type="submit"> Sign in </button>
+    <button class="btn btn-success" type="submit"> Sign in </button>
 </form>
 
 
@@ -49,5 +43,4 @@
 <div > Sau te poti loga <a href="/auth/login"> aici </a> </div>
 </div>
 
-</body>
-</html>
+{% endblock %}

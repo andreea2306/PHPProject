@@ -19,4 +19,10 @@ class Config {
         "user" => "root",
         "pass" => "",
         ];
+    const CLOUD = [
+        "cloud_name" => "andreea",
+        "api_key" => "587295255591389",
+        "api_secret" => "23FqFcPLPyu_9kbCBTvT_XORAJE",
+        "cloud_url" => "http://res.cloudinary.com/andreea"
+    ];
 }

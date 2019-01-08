@@ -74,28 +74,12 @@ abstract class Model
      */
     protected function prepareDataForStmt(array $data): array
     {
-//        $columns = '';
-//        $values = [];
-//
-//        for($i=0; $i < count($data); $i++) {
-//
-//            $values[]= $data[$i];
-//            $columns .= "key($data) = ? ";
-//         //if we are not at the last element with the iteration
-//         if(count($data) < ($i + 1)) {
-//             $columns .= "AND ";
-//         }
-//       }
-//
-//        return [$columns, $values];
-
-
-        $columns = '';
         $values = [];
 
         $i=0;
         for($i=0; $i < count($data); $i++)
         {
+        $columns = '';
             $param = current($data);
             $values[]= $param;
             $columns .= key($data)." = ? ";
@@ -107,6 +91,23 @@ abstract class Model
             next($param);
         }
 
+       /* $columns = '';
+        $values = [];
+        $i = 1;
+        $searchStr = "=";
+        if ($like) {
+            $searchStr = " LIKE ";
+        }
+        foreach($data as $key => $value) {
+            $values[]= $value;
+            $columns .= $key . $searchStr . "?";
+            //if we are not at the last element with the iteration
+            if($i < (count($data))) {
+                $columns .= "AND ";
+            }
+            $i++;
+        }*/
+
         return [$columns, $values];
 
     }
@@ -114,9 +115,9 @@ abstract class Model
     /**
      *Find data with values
      */
-    public function find(array $data)
+    public function find(array $data, bool $like = false)
     {
-        list($columns, $values) = $this->prepareDataForStmt($data);
+        list($columns, $values) = $this->prepareDataForStmt($data,$like);
         $db = $this->newDbCon();
         $stmt = $db->prepare("SELECT * from $this->table where $columns");
         return $stmt->execute([$values]);
@@ -150,15 +151,25 @@ abstract class Model
     /**
      *Update data in table
      */
-    public function update(array $data)
+    public function update(array $where,array $data) : bool
     {
+        list($columns, $values) = $this->prepareStmt($data);
+        //add the value of $where array to the list of $values that will be used in the prepared statement
+        //reset($where) it's a trick to extract the value of an associative array with a single element
+        $values[] = reset($where);
+        $db = $this->newDbCon();
+        $stmt = $db->prepare('UPDATE ' . $this->table . ' SET ' . $columns . ' WHERE ' . key($where) . '=?');
+        return $stmt->execute($values);
     }
 
     /**
      *delete data from table
      */
-    public function delete($id)
+    public function delete($id) : bool
     {
+        $db = $this->newDbCon();
+        $stmt = $db->prepare('DELETE FROM ' . $this->table . ' WHERE id=?');
+        return $stmt->execute([$id]);
     }
 
 }

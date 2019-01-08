@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Log in </title>
+{% set pageTitle="Login" %}
+{% extends "layout.html" %}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+{% block content %}
 
+    {{parent()}}
 <div class="container">
-    <h1 style="color:green"> Welcome </h1>
+
+    <h1 class="greenLogin"> Welcome </h1>
     <form action="/auth/login-action" method="post">
 
         <div class="row form-group">
@@ -35,14 +31,13 @@
         <div class="alert alert-danger">{{session_errors}}</div>
         {% endif %}
 
-        <button class="btn btn-success" type="submit"> Login in </button>
+        <button class="btn btn-success" type="submit"> Log in </button>
     </form>
 
     </br>
-    <div > Sau te poti loga <a href="/auth/register"> aici </a> </div>
+    <div > Sau te poti inregistra <a href="/auth/register"> aici </a> </div>
 
 </div>
-</div>
 
-</body>
-</html>
+
+{% endblock %}

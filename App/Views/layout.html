@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    {% block head %}
+    <title>{{pageTitle}}</title>
+    {% endblock %}
+</head>
+<body>
+
+<div id="content">
+
+    {% block content %}
+    <nav class="navbar noMarinLeftRight" id="nav">
+        <a class="navbar-brand whiteText marginLeft" href="#">Food Koala</a>
+
+        <div class="nav-item dropdown floatRight marginRight marginTopSmall">
+            <a class="nav-link dropdown-toggle whiteText" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </a>
+        {% if session_logged %}
+       <!-- <a href="/auth/logout" class="btn whiteText floatRight marginRight" title="Log out"><i class="fas fa-sign-out-alt whiteText"></i></a>
+-->
+            <div class="dropdown-menu marginRight" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item marginRightSmall" href="#">Editeaza profil</a>
+                <br />
+                <a class="dropdown-item marginRightSmall" href="">Comanda mea</a>
+                <br />
+                <a class="dropdown-item marginRightSmall" href="/auth/logout"> Log Out</a>
+
+            </div>
+
+        {% else %}
+
+            <div class="dropdown-menu marginRight" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Login</a>
+                <br />
+                <a class="dropdown-item" href="#">Signin</a>
+            </div>
+
+        {% endif %}
+    </div>
+
+    </nav>
+    {% endblock %}
+
+</div>
+
+</body>
+</html>

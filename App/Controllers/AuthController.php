@@ -16,6 +16,10 @@ class AuthController extends BaseController
     public function loginGET(){
         session_start();
         $_SESSION["Errors"] = false;
+
+        if($_SESSION["Username"])
+            header("Location: /");
+
         return $this->view("user/login.html");
     }
 
@@ -26,14 +30,14 @@ class AuthController extends BaseController
         $userModel = new User();
         $result = $userModel->checkUser($email, $pass);
 
+        session_start();
         if($result){
 
                 echo "Login successful";
-                session_start();
                 $_SESSION["Username"] = $result->Username;
+                header("Location: /");
             }
         else{
-            session_start();
             $_SESSION["Errors"] = "invalid credentials";
             header("Location: /auth/login");
         }
@@ -50,6 +54,14 @@ class AuthController extends BaseController
 
         $userModel = new User();
         $result = $userModel->register( $pass, $email, $username);
+    }
+
+    public function logOutPost(){
+        session_start();
+        session_unset();
+        session_destroy();
+
+        header("Location: /auth/login");
     }
 
 

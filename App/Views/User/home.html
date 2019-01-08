@@ -1,0 +1,17 @@
+{% set pageTitle="Home" %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+<h1 class="greenLogin">Foods</h1>
+
+<ul>
+{% for food in foods %}
+    <li> {{food.Name}} </li>
+{% endfor %}
+</ul>
+
+</div>
+{% endblock %}
