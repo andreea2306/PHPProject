@@ -20,5 +20,6 @@ class Authenticated implements Guard
     public function reject()
     {
          header("Location: /auth/login");
+         die();
     }
 }

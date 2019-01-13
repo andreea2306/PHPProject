@@ -9,7 +9,7 @@
 $routes = [
     '/' => ['controller' => 'HomeController',
             'action' => 'index'],
-            //'guard' => 'Authenticated'],
+           // 'guard' => 'Authenticated'],
     '/page/about-us' => ['controller' => 'PageController',
         'action' => 'aboutUsAction'],
     '/user/{id}' => ['controller' => 'UserController',
