@@ -1,0 +1,19 @@
+{% set pageTitle="Home" %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+    <h1 class="greenLogin">Restaurants</h1>
+
+    <ul class="list-unstyled fontItems">
+        {% for restaurant in restaurants %}
+        <li>
+            <i class="fas fa-utensils"></i>  <a class="fontItems" href="/foods/show-by-rest/{{restaurant.Id}}"> {{restaurant.Name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}

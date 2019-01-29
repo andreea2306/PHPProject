@@ -7,8 +7,8 @@
  */
 
 $routes = [
-    '/' => ['controller' => 'HomeController',
-            'action' => 'index'],
+    '/' => ['controller' => 'RestaurantController',
+            'action' => 'showAll'],
            // 'guard' => 'Authenticated'],
     '/page/about-us' => ['controller' => 'PageController',
         'action' => 'aboutUsAction'],
@@ -25,4 +25,10 @@ $routes = [
         'action' => 'registerPOST'],
     '/auth/logout' => ['controller' => 'AuthController',
         'action' => 'logOutPost'],
+    '/foods/show' => ['controller' => 'FoodController',
+        'action' => 'showAll'],
+    '/foods/show-by-rest/{id}' =>['controller' => 'FoodController',
+        'action' => 'showByRestauntName'],
+    '/foods/show-food/{id}' => ['controller' => 'FoodController',
+        'action' => 'show'],
 ];

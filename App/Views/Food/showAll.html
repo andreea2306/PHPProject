@@ -7,9 +7,11 @@
 <div class="container">
 <h1 class="greenLogin">Foods</h1>
 
-<ul>
+<ul class="list-unstyled fontItems">
 {% for food in foods %}
-    <li> {{food.Name}} </li>
+    <li>
+        <i class="fas fa-utensils"></i>  <a class="fontItems" href="/foods/show-food/{{food.Id}}"> {{food.Name}}</a>
+    </li>
 {% endfor %}
 </ul>
 

@@ -50,7 +50,13 @@ abstract class Model
     public Function getAll(): array
     {
         $db = $this->newDbCon();
-        $stmt = $db->query("SELECT * from $this->table");
+        if($this->table == "users"){
+            $orderField = "Email";
+        }
+        else{
+            $orderField = "Name";
+        }
+        $stmt = $db->query("SELECT * from $this->table ORDER BY $orderField");
 
         return $stmt->fetchAll();
     }

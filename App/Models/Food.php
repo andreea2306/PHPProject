@@ -16,4 +16,14 @@ class Food extends Model
     public function showAll(){
         return $this->getAll();
     }
+
+    public function getByRestaurantId($id)
+    {
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from $this->table where IdRestaurant=?");
+        $stmt->execute([$id]);
+        $rez = $stmt->fetchAll();
+        return $rez;
+    }
+
 }

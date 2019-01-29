@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="10;URL='/'">-->
     <link rel="stylesheet" href="/css/mystyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,6 +19,17 @@
     {% block content %}
     <nav class="navbar noMarinLeftRight" id="nav">
         <a class="navbar-brand whiteText marginLeft" href="#">Food Koala</a>
+
+        {% if session_logged %}
+        <ul class="navbar-nav mr-auto whiteText list-unstyled">
+            <li class="nav-item active fontNavItems">
+                <a class="nav-link whiteText" href="/">Restaurants <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item fontNavItems">
+                <a class="nav-link whiteText" href="/foods/show">Foods</a>
+            </li>
+        </ul>
+        {% endif %}
 
         <div class="nav-item dropdown floatRight marginRight marginTopSmall">
             <a class="nav-link dropdown-toggle whiteText" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

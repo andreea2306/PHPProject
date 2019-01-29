@@ -30,7 +30,10 @@ class AuthController extends BaseController
         $userModel = new User();
         $result = $userModel->checkUser($email, $pass);
 
-        session_start();
+        if(!isset($_SESSION))
+        {
+            session_start();
+        }
         if($result){
 
                 echo "Login successful";

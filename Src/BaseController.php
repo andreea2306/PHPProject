@@ -21,7 +21,11 @@ class BaseController
            // 'cache' => __DIR__.'/../Storage/Cache/Views',
             "cache" => false
         ));
-        session_start();
+
+        if(!isset($_SESSION))
+        {
+            session_start();
+        }
         if (!isset($_SESSION['Errors']))
         {
             $_SESSION['Errors'] = false;

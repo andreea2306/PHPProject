@@ -49,3 +49,19 @@
     font-size: larger;
 
 }
+
+.noDecorations{
+    list-style-type: none;
+}
+
+.fontItems, .fontItems:hover{
+    font-size: 25px;
+}
+
+.fontNavItems, .fontNavItems:hover{
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    margin-top: 12px;
+    margin-left: 10px;
+}

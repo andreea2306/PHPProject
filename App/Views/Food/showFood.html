@@ -1,0 +1,23 @@
+{% set pageTitle="Food" %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+    <div class="greenLogin fontItems">
+        {{food.Name}} - {{restaurant.Name}}
+    </div>
+
+    <div>
+        {{food.Price}} RON
+    </div>
+
+    <div>
+      Ingrediente: {{food.Ingredients}}
+    </div>
+
+    <a class="btn btn-success" href="">Comanda</a>
+</div>
+
+{% endblock %}
