@@ -1,0 +1,11 @@
+{% set pageTitle="Error" %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container greenLogin">
+    Sorry, you not authorized to see the page. <i class="fas fa-ban"></i>
+</div>
+
+{% endblock %}

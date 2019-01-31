@@ -20,7 +20,7 @@ class AuthController extends BaseController
         if($_SESSION["Username"])
             header("Location: /");
 
-        return $this->view("user/login.html");
+        return $this->view("auth/login.html");
     }
 
     public function loginPOST(){
@@ -36,8 +36,8 @@ class AuthController extends BaseController
         }
         if($result){
 
-                echo "Login successful";
                 $_SESSION["Username"] = $result->Username;
+                $_SESSION["IsAdmin"] = $userModel->isAdmin();
                 header("Location: /");
             }
         else{
@@ -47,7 +47,10 @@ class AuthController extends BaseController
     }
 
     public function registerGET(){
-        return $this->view("user/register.html");
+        if($_SESSION["Username"])
+            header("Location: /");
+
+        return $this->view("auth/register.html");
     }
 
     public function registerPOST(){
@@ -57,6 +60,7 @@ class AuthController extends BaseController
 
         $userModel = new User();
         $result = $userModel->register( $pass, $email, $username);
+        header("Location: /auth/login");
     }
 
     public function logOutPost(){

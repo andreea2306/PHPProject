@@ -50,11 +50,9 @@ abstract class Model
     public Function getAll(): array
     {
         $db = $this->newDbCon();
+        $orderField = "Name";
         if($this->table == "users"){
-            $orderField = "Email";
-        }
-        else{
-            $orderField = "Name";
+            $orderField = "Username";
         }
         $stmt = $db->query("SELECT * from $this->table ORDER BY $orderField");
 
@@ -157,14 +155,11 @@ abstract class Model
     /**
      *Update data in table
      */
-    public function update(array $where,array $data) : bool
+    public function update(array $data, $id) : bool
     {
         list($columns, $values) = $this->prepareStmt($data);
-        //add the value of $where array to the list of $values that will be used in the prepared statement
-        //reset($where) it's a trick to extract the value of an associative array with a single element
-        $values[] = reset($where);
         $db = $this->newDbCon();
-        $stmt = $db->prepare('UPDATE ' . $this->table . ' SET ' . $columns . ' WHERE ' . key($where) . '=?');
+        $stmt = $db->prepare('UPDATE ' . $this->table . ' SET ' . $columns . " WHERE Id = $id");
         return $stmt->execute($values);
     }
 
@@ -178,4 +173,19 @@ abstract class Model
         return $stmt->execute([$id]);
     }
 
+    private function prepareStmt(array $data): array
+    {
+        $i = 1;
+        $columns = '';
+        $values = [];
+        foreach ($data as $key => $value) {
+            $values[] = $value;
+            $columns .= $key .'=?';
+            if($i < (count($data))) {
+                $columns .= ", ";
+            }
+            $i++;
+        }
+        return [$columns, $values];
+    }
 }

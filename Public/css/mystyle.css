@@ -65,3 +65,12 @@
     margin-top: 12px;
     margin-left: 10px;
 }
+
+.fontList{
+    font-size: 20px;
+}
+
+.fadeText{
+    font-size: 12px;
+    color: lightgray;
+}

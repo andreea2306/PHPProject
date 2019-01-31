@@ -1,0 +1,22 @@
+{% set pageTitle="Users_Admin" %}
+{% set name = name %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+    <h1 class="greenLogin">Users</h1>
+
+    <ul class="list-unstyled fontItems">
+        {% for user in users %}
+        <li>
+            <div id="{{user.Id}}"> {{user.Username}}</div>
+            <a class="btn floatRight" href="/user/delete/{{user.Id}}"> <i class="fas fa-trash-alt"></i> </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

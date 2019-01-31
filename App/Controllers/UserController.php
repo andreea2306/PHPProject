@@ -12,13 +12,42 @@ use Framework\BaseController;
 
 class UserController extends BaseController
 {
-    public function showAction($id){
+    public function updateGET(){
 
+        session_start();
+        $username = $_SESSION["Username"];
         $user = new User();
-        $user = $user->get($id);
+        $result = $user->getByUsername($username);
 
-        bdump($user);
+        return $this->view("user/edit.html",["user" => $result]);
+    }
 
-        return $this->view("user/show.html",["name" => $user->Email]);
+    public function updatePOST(){
+        $user = new User();
+        $where = array();
+        array_push($where, $email ="Email");
+        array_push($where, $phone ="Adress");
+        array_push($where, $adress ="Telephone");
+        $userFromDb = $user->getByUsername($_SESSION["Username"]);
+        $id = $userFromDb->Id;
+
+        $data = ['Email' => $_POST["email"], 'Adress' => $_POST["adress"], 'Telephone' => $_POST["phone"]];
+
+        $result = $user->update($data, $id);
+        return $this->view("user/edit.html",["user" => $result]);
+    }
+
+    public function showAll(){
+        $model = new User();
+        $result = $model->getAll();
+
+        return $this->view("user/showAll.html",["users" => $result]);
+    }
+
+    public function delete($id){
+        $user = new User();
+        $rez = $user->delete($id);
+
+        header('Location: /user/show');
     }
 }

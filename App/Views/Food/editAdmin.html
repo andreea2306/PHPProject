@@ -1,0 +1,50 @@
+{% set pageTitle="Edit food" %}
+{% set name = name %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+
+    <h1 class="greenLogin"> Edit food </h1>
+    <div class="fadeText">
+        {{restaurant.Name}}
+    </div>
+    <form action="/food/update-action" method="post">
+    <input type="hidden" name="id" value="{{food.Id}}">
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="name">Name </label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="text" name="name" value="{{food.Name}}" required/>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="money"> Money</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="number" name="money" value="{{food.Price}}" />
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="ingredients"> Ingredients</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="text" name="ingredients" value="{{food.Ingredients}}"/>
+            </div>
+        </div>
+
+
+        <button class="btn btn-success" type="submit"> Save </button>
+    </form>
+
+</div>
+
+
+{% endblock %}

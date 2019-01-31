@@ -29,4 +29,23 @@ class User extends Model
         $this->new($data);
     }
 
+    public function getByUsername($username)
+    {
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from $this->table where Username=?");
+        $stmt->execute([$username]);
+        $rez = $stmt->fetch();
+        return $rez;
+    }
+
+    public function isAdmin(){
+        $username = $_SESSION["Username"];
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT isAdmin from $this->table where Username=?");
+        $stmt->execute([$username]);
+        $rez = $stmt->fetch();
+
+        return $rez;
+    }
+
 }

@@ -1,0 +1,74 @@
+{% set pageTitle="Foods_Admin" %}
+{% set name = name %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+    <h1 class="greenLogin">Insert food </h1>
+
+    <form action="/food/insert" method="post">
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="name">Name  &nbsp; &nbsp; &nbsp;</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="text" name="name" required/>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="restaurant"> Restaurant</label>
+            </div>
+            <div class="col-sm-5">
+                <select>
+
+                    {% for restaurant in restaurants %}
+                      <option name="restaurant" value="{{restaurant.Id}}"> <input type="hidden" name="restaurant" value="{{restaurant.Id}}"> {{restaurant.Name}}</option>
+                    {% endfor %}
+
+                </select>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="money"> Money</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="number" name="money" required/>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="ingredients"> Ingredients</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="text" name="ingredients" required/>
+            </div>
+        </div>
+
+        <button class="btn btn-success" type="submit"> Add </button>
+    </form>
+
+    <br/>
+    <br/>
+    <h1 class="greenLogin">List</h1>
+    <br/>
+    <ul class="list-unstyled fontList">
+        {% for food in foods %}
+        <li>
+            <a class="fontItems" href="/foods/show-food/{{food.Id}}"> {{food.Name}}</a>
+            <a class="btn" href="/food/edit/{{food.Id}}"> <i class="fas fa-edit"></i> </a>
+            <a class="btn floatRight" href="/food/delete/{{food.Id}}"> <i class="fas fa-trash-alt"></i> </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

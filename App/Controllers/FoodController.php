@@ -37,4 +37,52 @@ class FoodController extends BaseController
         return $this->view("food/showFood.html",["food" => $result, "restaurant" => $restaunt]);
     }
 
+    public function delete($id){
+        $food = new Food();
+        $rez = $food->delete($id);
+
+        header('Location: /food/showAdmin');
+    }
+
+    public function insert(){
+        $food = new Food();
+        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'IdRestaurant' => $_POST["restaurant"], "Ingredients" => $_POST["ingredients"]];
+        $result = $food->new( $data);
+
+        header('Location: /food/showAdmin');
+    }
+
+    public function showAdmin(){
+        $food = new Food();
+         $foods = $food->getAll();
+
+        $rest = new Restaurant();
+        $restaurants = $rest->getAll();
+        return $this->view("food/showAllAdmin.html",["foods" => $foods, "restaurants" => $restaurants]);
+    }
+
+    public function updateGET($id){
+
+        $food = new Food();
+        $result = $food->get($id);
+        $modelRestaurant = new Restaurant();
+        $restaurant = $modelRestaurant->get($result->IdRestaurant);
+
+        return $this->view("food/editAdmin.html",["food" => $result, "restaurant" => $restaurant]);
+    }
+
+    public function updatePOST(){
+        $food = new Food();
+        $where = array();
+        array_push($where, $name ="Name");
+        array_push($where, $price ="Price");
+        array_push($where, $ingrdients ="Ingredients");
+
+        $id = $_POST["id"];
+
+        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'Ingredients' => $_POST["ingredients"]];
+
+        $result = $food->update($data, $id);
+        header('Location: /food/showAdmin');
+    }
 }

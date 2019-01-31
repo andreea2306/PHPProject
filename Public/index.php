@@ -6,7 +6,7 @@
  * Time: 10:36
  */
 require __DIR__ . '/../vendor/autoload.php';
-require_once "../App/config.php";
+require_once "../App/Config.php";
 require_once "../App/routes.php";
 Tracy\Debugger::enable(Tracy\Debugger::DEVELOPMENT);
 ini_set("error_log",__DIR__."/../Logs/error.log");

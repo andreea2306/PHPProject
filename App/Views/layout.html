@@ -28,7 +28,28 @@
             <li class="nav-item fontNavItems">
                 <a class="nav-link whiteText" href="/foods/show">Foods</a>
             </li>
+
+            {% if is_admin %}
+            <li class="nav-item active fontNavItems">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle whiteText" href="#" id="navbarDropdownAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span> <i class="fas fa-briefcase"></i> ADMIN </span>
+                    </a>
+
+                    <div class="dropdown-menu marginRight" aria-labelledby="navbarDropdownAdmin">
+                        <a class="dropdown-item marginRightSmall" href="/user/show">Users</a>
+                        <br />
+                        <a class="dropdown-item marginRightSmall" href="/food/showAdmin">Food</a>
+                        <br />
+                        <a class="dropdown-item marginRightSmall" href="">Restaurants</a>
+
+                    </div>
+                </div>
+            </li>
+            {% endif %}
+
         </ul>
+
         {% endif %}
 
         <div class="nav-item dropdown floatRight marginRight marginTopSmall">
@@ -36,10 +57,11 @@
                 <i class="fas fa-bars"></i>
             </a>
         {% if session_logged %}
-       <!-- <a href="/auth/logout" class="btn whiteText floatRight marginRight" title="Log out"><i class="fas fa-sign-out-alt whiteText"></i></a>
--->
+
             <div class="dropdown-menu marginRight" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item marginRightSmall" href="#">Editeaza profil</a>
+                <span>{{name|upper}}</span>
+                <br />
+                <a class="dropdown-item marginRightSmall" href="/user/edit">Editeaza profil</a>
                 <br />
                 <a class="dropdown-item marginRightSmall" href="">Comanda mea</a>
                 <br />

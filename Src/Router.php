@@ -19,11 +19,18 @@ class Router
         }
         else if(preg_match('/\d+/', $url, $id))
         {
-            list($controllerObj, $action) = $this->getControllerName($routes, $url,$id[0]);
-            $controllerObj->{$action}($id[0]);
+            $isValid = $this->getControllerName($routes,$url,$id[0]);
+            if($isValid !== false) {
+                list($controllerObj, $action) = $this->getControllerName($routes, $url, $id[0]);
+                $controllerObj->{$action}($id[0]);
+            }
+            else{
+                header("Location: /error/notFound");
+
+            }
         }
         else{
-            echo "404 Not Found";
+            header("Location: /error/notFound");
         }
     }
 
@@ -37,6 +44,9 @@ class Router
 
         $this->checkGuard($routes,$url);
 
+        if(!class_exists($controller)){
+            return false;
+        }
         $controllerObj = new $controller();
         $action = $routes[$url]['action'];
         return array($controllerObj, $action);

@@ -1,4 +1,5 @@
 {% set pageTitle="Home" %}
+{% set name = name %}
 {% extends "layout.html" %}
 
 {% block content %}
@@ -10,7 +11,7 @@
     <ul class="list-unstyled fontItems">
         {% for restaurant in restaurants %}
         <li>
-            <i class="fas fa-utensils"></i>  <a class="fontItems" href="/foods/show-by-rest/{{restaurant.Id}}"> {{restaurant.Name}}</a>
+            <i class="fas fa-star"></i>  <a class="fontItems" href="/foods/show-by-rest/{{restaurant.Id}}"> {{restaurant.Name}} - <span class="fadeText">{{restaurant.Adress}} </span></a>
         </li>
         {% endfor %}
     </ul>
