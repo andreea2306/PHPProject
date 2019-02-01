@@ -43,6 +43,7 @@ class Router
         $controller = "App\\Controllers\\".$controller;
 
         $this->checkGuard($routes,$url);
+        $this->checkAuthorizedGuard($routes,$url);
 
         if(!class_exists($controller)){
             return false;
@@ -59,5 +60,14 @@ class Router
             //instantiate and execute the handle action
             (new $guard)->handle();
 	        }
+    }
+
+    private function checkAuthorizedGuard(array $routes,string $route): void
+    {
+        if (isset($routes[$route]['authorizedGuard'])) {
+            $guard = "\\App\\Guards\\" . $routes[$route]['authorizedGuard'];
+            //instantiate and execute the handle action
+            (new $guard)->handle();
+        }
     }
 }

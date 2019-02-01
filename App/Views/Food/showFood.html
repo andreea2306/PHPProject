@@ -6,19 +6,21 @@
 {{parent()}}
 
 <div class="container">
-    <div class="greenLogin fontItems">
-        {{food.Name}} - {{restaurant.Name}}
+    <div class="greenLogin padding fontSizeTitle">
+        {{food.Name}}  <span class="greenSignin"> ({{restaurant.Name}})  </span>
     </div>
 
-    <div>
-        {{food.Price}} RON
+    <div class="padding fontList">
+       <span class="bold"> {{food.Price}} </span> RON
     </div>
 
-    <div>
-      Ingrediente: {{food.Ingredients}}
+    <div class="padding fontList">
+        <span class="bold"> Ingrediente: </span> {{food.Ingredients}}
     </div>
 
-    <a class="btn btn-success" href="">Comanda</a>
+    <div class="padding">
+        <a class="btn btn-success padding" href="">Comanda</a>
+    </div>
 </div>
 
 {% endblock %}

@@ -74,3 +74,18 @@
     font-size: 12px;
     color: lightgray;
 }
+
+.padding{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.fontSizeTitle{
+    font-size: 35px;
+}
+

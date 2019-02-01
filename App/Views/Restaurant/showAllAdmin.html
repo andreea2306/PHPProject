@@ -1,0 +1,52 @@
+{% set pageTitle="Restaurants_Admin" %}
+{% set name = name %}
+{% extends "layout.html" %}
+
+{% block content %}
+{{parent()}}
+
+<div class="container">
+    <h1 class="greenLogin">Insert restaurants </h1>
+
+    <form action="/restaurant/insert" method="post">
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="name">Name  &nbsp; &nbsp; &nbsp;</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="text" name="name" required/>
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <div class="col-sm-2">
+                <label for="adress"> Adress</label>
+            </div>
+            <div class="col-sm-5">
+                <input class="form-control" type="text" name="adress" required/>
+            </div>
+        </div>
+
+        <button class="btn btn-success" type="submit"> Add </button>
+    </form>
+
+    <br/>
+    <br/>
+    <h1 class="greenLogin">List</h1>
+    <br/>
+    <ul class="list-unstyled fontList">
+        {% for restaurant in restaurants %}
+        <li>
+            <div class="fontItems"> {{restaurant.Name}}</div>
+            <div align="right">
+            <a class="btn" href="/restaurant/edit/{{restaurant.Id}}"> <i class="fas fa-edit"></i> </a>
+            <a class="btn floatRight" href="/restaurant/delete/{{restaurant.Id}}"> <i class="fas fa-trash-alt"></i> </a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

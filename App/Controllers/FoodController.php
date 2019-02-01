@@ -46,7 +46,7 @@ class FoodController extends BaseController
 
     public function insert(){
         $food = new Food();
-        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'IdRestaurant' => $_POST["restaurant"], "Ingredients" => $_POST["ingredients"]];
+        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'IdRestaurant' => $_POST["restaurants"], "Ingredients" => $_POST["ingredients"]];
         $result = $food->new( $data);
 
         header('Location: /food/showAdmin');

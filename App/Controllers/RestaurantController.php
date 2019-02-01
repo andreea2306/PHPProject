@@ -24,7 +24,7 @@ class RestaurantController extends BaseController
         $rest = new Restaurant();
         $rez = $rest->delete($id);
 
-        header('Location: /restaurant/showAllAdmin');
+        header('Location: /restaurant/showAdmin');
     }
 
     public function insert(){
@@ -47,7 +47,7 @@ class RestaurantController extends BaseController
         $rest = new Restaurant();
         $result = $rest->get($id);
 
-        return $this->view("restaurant/editAdmin.html",["restaurants" => $result]);
+        return $this->view("restaurant/editAdmin.html",["restaurant" => $result]);
     }
 
     public function updatePOST(){

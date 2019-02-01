@@ -24,10 +24,10 @@
                 <label for="restaurant"> Restaurant</label>
             </div>
             <div class="col-sm-5">
-                <select>
+                <select name="restaurants">
 
                     {% for restaurant in restaurants %}
-                      <option name="restaurant" value="{{restaurant.Id}}"> <input type="hidden" name="restaurant" value="{{restaurant.Id}}"> {{restaurant.Name}}</option>
+                      <option name="restaurant" value="{{restaurant.Id}}"> {{restaurant.Name}}</option>
                     {% endfor %}
 
                 </select>
@@ -63,8 +63,10 @@
         {% for food in foods %}
         <li>
             <a class="fontItems" href="/foods/show-food/{{food.Id}}"> {{food.Name}}</a>
+            <div align="right">
             <a class="btn" href="/food/edit/{{food.Id}}"> <i class="fas fa-edit"></i> </a>
             <a class="btn floatRight" href="/food/delete/{{food.Id}}"> <i class="fas fa-trash-alt"></i> </a>
+            </div>
         </li>
         {% endfor %}
     </ul>

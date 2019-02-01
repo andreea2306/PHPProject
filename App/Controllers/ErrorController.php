@@ -7,8 +7,6 @@
  */
 
 namespace App\Controllers;
-
-
 use Framework\BaseController;
 
 class ErrorController extends BaseController
@@ -17,7 +15,7 @@ class ErrorController extends BaseController
         return $this->view("error/notFound.html");
     }
 
-    public function unathorized(){
+    public function unauthorized(){
         return $this->view("error/unauthorized.html");
     }
 }

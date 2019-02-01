@@ -37,7 +37,12 @@ class AuthController extends BaseController
         if($result){
 
                 $_SESSION["Username"] = $result->Username;
-                $_SESSION["IsAdmin"] = $userModel->isAdmin();
+                $user = $userModel->isAdmin();
+                $isAdmin = true;
+                if($user->isAdmin == 0){
+                    $isAdmin = false;
+                }
+                $_SESSION["IsAdmin"] = $isAdmin;
                 header("Location: /");
             }
         else{
