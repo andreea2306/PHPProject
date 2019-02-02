@@ -25,12 +25,13 @@ class Router
                 $controllerObj->{$action}($id[0]);
             }
             else{
-                header("Location: /error/notFound");
-
+                header("Location: /custom-error/not-found");
+                echo "404";
             }
         }
         else{
-            header("Location: /error/notFound");
+            header("Location: /custom-error/not-found");
+            echo "404";
         }
     }
 

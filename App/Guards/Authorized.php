@@ -7,9 +7,9 @@
  */
 
 namespace App\Guards;
+use Framework\Guard;
 
-
-class Authorized
+class Authorized implements Guard
 {
     public function handle(array $params = null)
     {
@@ -20,7 +20,7 @@ class Authorized
 
     public function reject()
     {
-        header("Location: /error/unauthorized");
+        header("Location: /custom-error/unauthorized");
         die();
     }
 }
