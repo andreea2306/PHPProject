@@ -5,12 +5,22 @@
 {% block content %}
 {{parent()}}
 
-<ul>
+<div class="container">
+<h1 class="greenSignin"> Foods from  <span class="bold greenLogin"> {{restaurant.Name}} </span> </h1>
+
+<ul class="list-unstyled fontItems marginLeft marginTopSmall">
+    {% set hasFoods = true %}
 {% for food in foods %}
+    {% set hasFoods = false %}
 <li>
     <i class="fas fa-utensils"></i>  <a class="fontItems" href="/foods/show-food/{{food.Id}}"> {{food.Name}}</a>
 </li>
 {% endfor %}
 </ul>
 
+    {% if hasFoods %}
+    <div class="fontSizeTitle greenSignin"> This restaurant has not food yet </div>
+    {% endif %}
+
+</div>
 {% endblock %}

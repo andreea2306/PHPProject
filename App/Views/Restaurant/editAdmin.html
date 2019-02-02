@@ -19,6 +19,10 @@
             </div>
         </div>
 
+        {% if unique_error %}
+        <div class="alert alert-danger">{{unique_error}}</div>
+        {% endif %}
+
         <div class="row form-group">
             <div class="col-sm-2">
                 <label for="adress"> Adress</label>

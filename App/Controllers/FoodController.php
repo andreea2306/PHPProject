@@ -25,7 +25,10 @@ class FoodController extends BaseController
         $model = new Food();
         $result = $model->getByRestaurantId($id);
 
-        return $this->view("food/showFoodsByRestaurant.html",["foods" => $result]);
+        $modelRestaurant = new Restaurant();
+        $restaurant = $modelRestaurant->get($id);
+
+        return $this->view("food/showFoodsByRestaurant.html",["foods" => $result, "restaurant" => $restaurant]);
     }
 
     public function show($id){

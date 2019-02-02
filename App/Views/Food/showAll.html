@@ -9,6 +9,7 @@
 <h1 class="greenLogin">Foods</h1>
 
 <ul class="list-unstyled fontItems">
+
 {% for food in foods %}
     <li>
         <i class="fas fa-utensils"></i>  <a class="fontItems" href="/foods/show-food/{{food.Id}}"> {{food.Name}}</a>

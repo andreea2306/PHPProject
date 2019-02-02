@@ -16,4 +16,22 @@ class Restaurant extends Model
     public function showAll(){
         return $this->getAll();
     }
+
+    public function getByName($name){
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from $this->table where Name=?");
+        $stmt->execute([$name]);
+        $rez = $stmt->fetch();
+
+        return $rez;
+    }
+
+    public function getUnique($name,$id){
+        $db = $this->newDbCon();
+        $stmt = $db->prepare("SELECT * from $this->table where Name=? AND Id != $id");
+        $stmt->execute([$name]);
+        $rez = $stmt->fetch();
+
+        return $rez;
+    }
 }

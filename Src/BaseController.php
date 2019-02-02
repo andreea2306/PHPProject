@@ -30,10 +30,14 @@ class BaseController
         {
             $_SESSION['Errors'] = false;
         }
+        if(!isset($_SESSION["UniqueError"])){
+            $_SESSION["UniqueError"] = false;
+        }
         $this->twig->addGlobal('session_errors', $_SESSION["Errors"]);
         $this->twig->addGlobal('session_logged', isset($_SESSION["Username"]));
         $this->twig->addGlobal('name', $_SESSION["Username"]);
         $this->twig->addGlobal('is_admin', $_SESSION["IsAdmin"]);
+        $this->twig->addGlobal('unique_error', $_SESSION["UniqueError"]);
     }
 
     public function view(string $viewFile,array $params = [])

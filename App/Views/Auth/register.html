@@ -1,4 +1,4 @@
-{% set pageTitle="Login" %}
+{% set pageTitle="Register" %}
 {% extends "layout.html" %}
 
 {% block content %}
@@ -10,12 +10,16 @@
 <form action="/auth/register-action" method="post">
     <div class="row form-group">
         <div class="col-sm-2">
-            <label for="username"> Name</label>
+            <label for="username"> Userame</label>
         </div>
         <div class="col-sm-5">
             <input class="form-control" type="text" name="username"/>
         </div>
     </div>
+
+    {% if unique_error %}
+    <div class="alert alert-danger">{{unique_error}}</div>
+    {% endif %}
 
     <div class="row form-group">
         <div class="col-sm-2">

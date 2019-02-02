@@ -52,6 +52,9 @@ class AuthController extends BaseController
     }
 
     public function registerGET(){
+        session_start();
+        $_SESSION["UniqueError"] = false;
+
         if($_SESSION["Username"])
             header("Location: /");
 
@@ -64,8 +67,15 @@ class AuthController extends BaseController
         $username  = $_POST["username"];
 
         $userModel = new User();
-        $result = $userModel->register( $pass, $email, $username);
-        header("Location: /auth/login");
+        $usernameDb = $userModel->getByUsername($username);
+        if(!$usernameDb){
+            $result = $userModel->register( $pass, $email, $username);
+            header("Location: /auth/login");}
+        else{
+            session_start();
+            $_SESSION["UniqueError"] = "This username is already taken";
+            header("Location: /auth/register");
+        }
     }
 
     public function logOutPost(){
