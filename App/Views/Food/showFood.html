@@ -6,21 +6,36 @@
 {{parent()}}
 
 <div class="container">
+    <form action="/order/make" method="post">
+        <input type="hidden" name="idRestaurant" value="{{restaurant.Id}}">
+        <input type="hidden" name="idFood" value="{{food.Id}}">
+        <input type="hidden" name="priceOnePiece" value="{{food.Price}}">
+
     <div class="greenLogin padding fontSizeTitle">
         {{food.Name}}  <span class="greenSignin"> ({{restaurant.Name}})  </span>
     </div>
 
     <div class="padding fontList">
-       <span class="bold"> {{food.Price}} </span> RON
+       <span id="price" class="bold"> {{food.Price}} </span> RON
     </div>
 
     <div class="padding fontList">
         <span class="bold"> Ingrediente: </span> {{food.Ingredients}}
     </div>
 
-    <div class="padding">
-        <a class="btn btn-success padding" href="">Comanda</a>
+    <div class="portions padding">
+     <span class="fadeText"> Portions: </span>   <input id="nrOfPortions" class="portionNrSize" type="number" name="portions" value="1">
     </div>
+
+    <div class="padding fontList bold">
+        <span class="greenSignin"> Total price: <span id="totalPrice">{{food.Price}}  </span> RON </span>
+    </div>
+
+    <div class="padding">
+        <button type="submit" class="btn btn-success padding">Comanda</button>
+    </div>
+
+    </form>
 </div>
 
 {% endblock %}

@@ -86,4 +86,6 @@ $routes = [
         'action' => 'updatePOST',
         'guard' => 'Authenticated',
         'authorizedGuard' => 'Authorized'],
+    '/order/make' => ['controller' => 'OrderController',
+        'action' => 'make']
 ];
