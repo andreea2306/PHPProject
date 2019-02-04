@@ -8,7 +8,8 @@
 <div class="container">
     <h1 class="greenLogin">Insert food </h1>
 
-    <form action="/food/insert" method="post">
+    <form action="/food/insert" method="post" enctype="multipart/form-data">
+        <div class="floatRight"> <span class="bold"> Upload </span> <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*"> </div>
 
         <div class="row form-group">
             <div class="col-sm-2">

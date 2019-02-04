@@ -49,7 +49,16 @@ class FoodController extends BaseController
 
     public function insert(){
         $food = new Food();
-        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'IdRestaurant' => $_POST["restaurants"], "Ingredients" => $_POST["ingredients"]];
+
+        $target_dir = "images/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        } else {
+            echo "Sorry, there was an error uploading your file.";
+        }
+        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'IdRestaurant' => $_POST["restaurants"], "Ingredients" => $_POST["ingredients"],'PhotoName' => $target_file];
         $result = $food->new( $data);
 
         header('Location: /food/showAdmin');
@@ -83,8 +92,16 @@ class FoodController extends BaseController
 
         $id = $_POST["id"];
 
-        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'Ingredients' => $_POST["ingredients"]];
+        $target_dir = "images/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        } else {
+            echo "Sorry, there was an error uploading your file.";
+        }
+
+        $data = ['Name' => $_POST["name"], 'Price' => $_POST["money"], 'Ingredients' => $_POST["ingredients"], 'PhotoName' => $target_file];
         $result = $food->update($data, $id);
         header('Location: /food/showAdmin');
     }
